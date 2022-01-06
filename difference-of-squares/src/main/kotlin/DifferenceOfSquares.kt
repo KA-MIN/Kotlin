@@ -1,15 +1,31 @@
-class Squares {
-    //TODO: implement proper constructor
+class Squares (var n : Int){
 
-    fun sumOfSquares() {
-        TODO("Implement the function to complete the task")
+    fun sumOfSquares(): Int {
+        var num = 0;
+        if(n < 1){
+            throw Exception()
+        }else{
+            for(i in 1..n){
+                num += i*i
+            }
+            return num
+        }
     }
 
-    fun squareOfSum() {
-        TODO("Implement the function to complete the task")
+    fun squareOfSum(): Int {
+        var num = 0;
+        if(n < 1){
+            throw Exception()
+        }else{
+            for(i in 1..n){
+                num += i
+            }
+            return num*num
+        }
     }
 
-    fun difference() {
-        TODO("Implement the function to complete the task")
+    fun difference(): Int {
+        return squareOfSum()- sumOfSquares()
     }
+
 }
