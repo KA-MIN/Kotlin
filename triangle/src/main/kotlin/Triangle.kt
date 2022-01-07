@@ -1,8 +1,21 @@
 class Triangle<out T : Number>(val a: T, val b: T, val c: T) {
 
-    // TODO: Implement proper constructor
+    val d: Double = a.toDouble();
+    var e: Double = b.toDouble();
+    var f: Double = c.toDouble();
 
-    val isEquilateral: Boolean = TODO("Implement this getter to complete the task")
-    val isIsosceles: Boolean = TODO("Implement this getter to complete the task")
-    val isScalene: Boolean = TODO("Implement this getter to complete the task")
+    init{
+        if ((d < 0.0) || (e < 0.0) || (f < 0.0)) {
+            throw IllegalArgumentException()
+        }
+        println("ed: "+ d+e )
+        println("f: "+ f )
+        if((d + e < f) && (e + f < d) && (f + d < e)) {
+            throw IllegalArgumentException()
+        }
+    }
+
+    val isEquilateral: Boolean = (d == e) && (e == f)
+    val isIsosceles: Boolean = (d == e) || (e == f) || (f == d)
+    val isScalene: Boolean = (d != e) && (e != f) && (f != d)
 }

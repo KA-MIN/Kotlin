@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TriangleTest" tests="19" skipped="5" failures="0" errors="0" timestamp="2022-01-07T20:19:27" hostname="DESKTOP-F5KT1MV" time="0.036">
+  <properties/>
+  <testcase name="scalene - may not violate triangle inequality" classname="TriangleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="triangle inequality violation - last is greater then sum of others " classname="TriangleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="isosceles - no sides are equal" classname="TriangleTest" time="0.027"/>
+  <testcase name="scalene - two sides are equal" classname="TriangleTest" time="0.001"/>
+  <testcase name="isosceles - first two sides are equal" classname="TriangleTest" time="0.0"/>
+  <testcase name="equilateral - any side is unequal" classname="TriangleTest" time="0.001"/>
+  <testcase name="equilateral - all sides are equal" classname="TriangleTest" time="0.0"/>
+  <testcase name="isosceles - sides may be floats" classname="TriangleTest" time="0.001"/>
+  <testcase name="isosceles - first and last sides are equal" classname="TriangleTest" time="0.0"/>
+  <testcase name="scalene - no sides are equal" classname="TriangleTest" time="0.001"/>
+  <testcase name="isosceles - last two sides are equal" classname="TriangleTest" time="0.0"/>
+  <testcase name="scalene - all sides are equal" classname="TriangleTest" time="0.001"/>
+  <testcase name="equilateral - sides may be floats" classname="TriangleTest" time="0.0"/>
+  <testcase name="equilateral - all zero sides is not a triangle" classname="TriangleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="triangle inequality violation - first is greater then sum of others " classname="TriangleTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="triangle inequality violation - second is greater then sum of others " classname="TriangleTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="equilateral - no sides are equal" classname="TriangleTest" time="0.001"/>
+  <testcase name="scalene - sides may be floats" classname="TriangleTest" time="0.0"/>
+  <testcase name="isosceles - equilateral triangles are also isosceles" classname="TriangleTest" time="0.0"/>
+  <system-out><![CDATA[ed: 2.03.0
+f: 4.0
+ed: 4.04.0
+f: 3.0
+ed: 4.04.0
+f: 3.0
+ed: 2.03.0
+f: 2.0
+ed: 2.02.0
+f: 2.0
+ed: 0.50.4
+f: 0.5
+ed: 4.03.0
+f: 4.0
+ed: 5.04.0
+f: 6.0
+ed: 3.04.0
+f: 4.0
+ed: 4.04.0
+f: 4.0
+ed: 0.50.5
+f: 0.5
+ed: 5.04.0
+f: 6.0
+ed: 0.50.4
+f: 0.6
+ed: 4.04.0
+f: 4.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
