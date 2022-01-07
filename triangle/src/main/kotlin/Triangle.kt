@@ -8,8 +8,6 @@ class Triangle<out T : Number>(val a: T, val b: T, val c: T) {
         if ((d < 0.0) || (e < 0.0) || (f < 0.0)) {
             throw IllegalArgumentException()
         }
-        println("ed: "+ d+e )
-        println("f: "+ f )
         if((d + e < f) && (e + f < d) && (f + d < e)) {
             throw IllegalArgumentException()
         }

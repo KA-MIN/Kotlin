@@ -56,19 +56,19 @@ class TriangleTest {
         assertFalse(Triangle(2, 3, 4).isIsosceles)
     }
 
-    @Ignore
+
     @Test(expected = IllegalArgumentException::class)
     fun `triangle inequality violation - last is greater then sum of others `() {
         Triangle(1, 1, 3)
     }
 
-    @Ignore
+
     @Test(expected = IllegalArgumentException::class)
     fun `triangle inequality violation - second is greater then sum of others `() {
         Triangle(1, 3, 1)
     }
 
-    @Ignore
+
     @Test(expected = IllegalArgumentException::class)
     fun `triangle inequality violation - first is greater then sum of others `() {
         Triangle(3, 1, 1)
@@ -94,7 +94,7 @@ class TriangleTest {
         assertFalse(Triangle(4, 4, 3).isScalene)
     }
 
-    @Ignore
+
     @Test(expected = IllegalArgumentException::class)
     fun `scalene - may not violate triangle inequality`() {
         Triangle(7, 3, 2)
