@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="SquaresTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-01-06T11:30:18" hostname="DESKTOP-F5KT1MV" time="0.023">
+<testsuite name="SquaresTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2022-01-08T09:24:33" hostname="DESKTOP-F5KT1MV" time="0.025">
   <properties/>
-  <testcase name="squareOfSum100" classname="SquaresTest" time="0.021"/>
+  <testcase name="squareOfSum100" classname="SquaresTest" time="0.023"/>
   <testcase name="squareOfSum1" classname="SquaresTest" time="0.0"/>
   <testcase name="squareOfSum5" classname="SquaresTest" time="0.0"/>
   <testcase name="sumOfSquares100" classname="SquaresTest" time="0.0"/>
