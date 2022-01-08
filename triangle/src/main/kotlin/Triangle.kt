@@ -1,19 +1,21 @@
-class Triangle<out T : Number>(val a: T, val b: T, val c: T) {
+data class Triangle<out T : Number>(val a: T, val b: T, val c: T) {
 
-    val d: Double = a.toDouble();
-    var e: Double = b.toDouble();
-    var f: Double = c.toDouble();
+    init {
+        require(isValid(a.toDouble(), b.toDouble(), c.toDouble()))
+    }
 
-    init{
-        if ((d < 0.0) || (e < 0.0) || (f < 0.0)) {
-            throw IllegalArgumentException()
-        }
-        if((d + e < f) && (e + f < d) && (f + d < e)) {
-            throw IllegalArgumentException()
+    companion object {
+        fun isValid(a: Double, b: Double, c: Double): Boolean {
+            val sides = doubleArrayOf(a, b, c)
+            sides.sort()
+            return 0 < sides[0] && sides[2] < sides[0] + sides[1]
         }
     }
 
-    val isEquilateral: Boolean = (d == e) && (e == f)
-    val isIsosceles: Boolean = (d == e) || (e == f) || (f == d)
-    val isScalene: Boolean = (d != e) && (e != f) && (f != d)
+    val isEquilateral: Boolean
+        get() = a == b && b == c
+    val isIsosceles: Boolean
+        get() = a == b || b == c || c == a
+    val isScalene: Boolean
+        get() = !isIsosceles
 }
