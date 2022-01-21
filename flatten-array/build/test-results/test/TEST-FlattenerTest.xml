@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FlattenerTest" tests="6" skipped="4" failures="0" errors="0" timestamp="2022-01-21T16:32:30" hostname="DESKTOP-F5KT1MV" time="0.036">
+  <properties/>
+  <testcase name="flattens6LevelNestedList" classname="FlattenerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="allNullNestedListReturnsEmptyList" classname="FlattenerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="flattens5LevelNestedList" classname="FlattenerTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="flatListIsUnchanged" classname="FlattenerTest" time="0.035"/>
+  <testcase name="flattens2LevelNestedList" classname="FlattenerTest" time="0.0"/>
+  <testcase name="flattens6LevelNestedListWithNulls" classname="FlattenerTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

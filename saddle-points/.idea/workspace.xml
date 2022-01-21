@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b897c7c3-a16a-4aa9-bbd5-ceaa4e1e4acd" name="Changes" comment="" />
+    <list default="true" id="24fe3978-25f5-4bd6-899e-8e541fc6076c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +18,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -27,12 +30,22 @@
       </state>
     </system>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/kotlin/MatrixTest.kt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/kotlin/Matrix.kt" root0="SKIP_INSPECTION" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flatten-array" />
+  </component>
   <component name="TaskManager">
     <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/saddle_points$MatrixTest_saddle_points_in_a_single_column_matrix.ic" NAME="MatrixTest.saddle points in a single column matrix Coverage Results" MODIFIED="1642765398803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
