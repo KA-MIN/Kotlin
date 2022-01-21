@@ -1,5 +1,16 @@
 object Flattener {
     fun flatten(source: Collection<Any?>): List<Any> {
-        TODO("Implement the function to complete the task")
+        val result = mutableListOf<Any>()
+
+        source.forEach { item->
+
+            if(item is Collection<*>){
+                result.addAll(flatten(item))
+            }else if(item != null){
+                result.add(item)
+            }
+        }
+
+        return result
     }
 }
