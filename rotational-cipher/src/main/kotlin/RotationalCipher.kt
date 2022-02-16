@@ -1,8 +1,17 @@
 class RotationalCipher {
 
-    // TODO: Implement proper constructor
+    var i: Int
 
-    fun encode(text: String): String {
-        TODO("Implement this function to complete the task")
+    constructor(key: Int)  {
+        i= key
     }
+    fun encode(sentance: String): String = sentance.map {
+        when(it){
+            in 'a'..'z' -> 'a' + (((it + i) - 'a') % 26)
+            in 'A'..'Z'-> 'A' + (((it + i) - 'A') % 26)
+            else -> it
+        }
+    }.joinToString ("")
 }
+
+
