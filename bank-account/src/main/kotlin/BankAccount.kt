@@ -1,11 +1,27 @@
 class BankAccount {
-    // TODO: implement read access to 'balance'
 
-    fun adjustBalance(amount: Long){
-        TODO("Implement the function to complete the task")
+    var balance: Int = 0
+        get() {
+            if(closed){
+                throw IllegalStateException()
+            }
+            return field
+        }
+    var closed = false
+
+    init {
+        if (closed) throw IllegalStateException()
+    }
+
+    fun adjustBalance(amount: Int): Int {
+        if (closed) {
+            throw IllegalStateException()
+        }
+        balance += amount
+        return balance
     }
 
     fun close() {
-        TODO("Implement the function to complete the task")
+        closed = true
     }
 }
