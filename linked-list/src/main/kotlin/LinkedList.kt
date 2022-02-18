@@ -1,18 +1,20 @@
 class Deque<T> {
 
+    val list = mutableListOf<T>()
+
     fun push(value: T) {
-        TODO("Implement this function to complete the task")
+        list.add(value)
     }
 
     fun pop(): T? {
-        TODO("Implement this function to complete the task")
+        return list.removeLast()
     }
 
     fun unshift(value: T) {
-        TODO("Implement this function to complete the task")
+        list.add(0, value)
     }
 
     fun shift(): T? {
-        TODO("Implement this function to complete the task")
+        return list.removeFirst()
     }
 }
