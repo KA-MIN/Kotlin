@@ -1,6 +1,11 @@
 object Pangram {
 
     fun isPangram(input: String): Boolean {
-        TODO("Implement this function to complete the task")
+        var alphabet: String = "abcdefghijklmnopqrstuvwxyz"
+
+        for(char in alphabet){
+            if(!input.toLowerCase().contains(char)) return false
+        }
+        return true
     }
 }
